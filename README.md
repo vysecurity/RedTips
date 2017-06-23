@@ -1,7 +1,15 @@
+Credits
+=======
+
+The following tips were posted by @vysecurity on Twitter
+
+Disclaimer
+==========
+
+The following information should not be used for malicious purposes or intent
+
 Red Team Tips by @vysecurity on Twitter
-
----------------------------------------
-
+=========================================
 
 Red Tip #1: Profile your victim and use their user agent to mask your traffic. Alternatively use UA from software such as Outlook.
 
