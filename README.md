@@ -351,3 +351,72 @@ Red tip #174: Got a shell on a victim without admin? Want their creds? Try Invei
 
 Red tip #175: Got a low priv shell and need creds? Use Invoke-LoginPrompt by @enigma0x3 https://raw.githubusercontent.com/enigma0x3/Invoke-LoginPrompt/master/Invoke-LoginPrompt.ps1
 
+Red tip #176: Get access to shadow admin accounts, they can DCsync and are essentially DA. https://www.cyberark.com/threat-research-blog/shadow-admins-stealthy-accounts-fear/
+
+Red tip #177: If blue detects PTH. Try extract Kerberos tickets and PTT.
+
+Red tip #178: @lefterispan wrote https://gist.github.com/leftp/a3330f13ac55f584239baa68a3bb88f2 … which sets up a proxy and forces an auth attempt to it to leak hash. Low priv leak.
+
+Red tip #179: When creating phishing pages, try cloning and modifying parts of the client’s own webpages. For example of their VPN login!
+
+Red tip #180: Regardless of whether there are known defences. Run your PS scripts through Obfuscation before loading into memory.
+
+Red tip #181: Stuck trying to find those assets still? Try @424f424f Get-BrowserData https://github.com/rvrsh3ll/Misc-Powershell-Scripts/blob/master/Get-BrowserData.ps1
+
+Red tip #182: Follow @JohnLaTwC as he tweets phishing examples and sometimes with new techniques used in Wild. Good for adversary simulation
+
+Red tip #183: @MrUn1k0d3r released https://github.com/Mr-Un1k0d3r/SCT-obfuscator … can probably bypass Gateway signatures when performing SCT delivery for regsvr32! https://github.com/Mr-Un1k0d3r/SCT-obfuscator
+
+Red tip #184: We always talk about Windows and AD. But now let’s have a look at Linux and AD with https://medium.com/@br4nsh/from-linux-to-ad-10efb529fae9
+
+Red tip #185: Use WSUS for lateral movement https://github.com/AlsidOfficial/WSUSpendu/blob/master/WSUSpendu.ps1
+
+Red tip #186: View @jpcert https://www.jpcert.or.jp/english/pub/sr/20170612ac-ir_research_en.pdf … and look at all those indicators and artefacts left behind. Then hexedit those tools 👍
+
+Red tip #187: Found a portal using 2FA? Using RSA SecureID? https://blog.netspi.com/targeting-rsa-emergency-access-tokencodes-fun-profit/ … Pin bruteforce!
+
+Red tip #188: @pwnagelabs says to avoid bash history on exit using: kill -9 $$
+
+Red tip #189: @pwnagelabs teaches us how to avoid wtmp logging with: ssh -l user target -T
+
+Red tip #190: @bluscreenofjeff shows us how to use Apache Mod rewrite to randomly serve different payloads https://bluescreenofjeff.com/2017-06-13-serving-random-payloads-with-apache-mod_rewrite/
+
+Red tip #191: Domain user? Query LDAP for Printers. Attempt default creds or known vulns then read Service account creds, hash or relay
+
+Red tip #192: Get-WmiObject -Class MicrosoftDNS_AType -NameSpace Root\MicrosoftDNS -ComputerName DC001 | Export-CSV -not dns.csv
+
+Red tip #193: Password protected doc in email? For some reason a lot of people send the password separately to the same inbox. #epicfail
+
+Red tip #194: Can’t see another part of the network and there’s a DC? Pivot off the DC :)
+
+Red tip #195: C:\windows\system32\inetsrv\appcmd list site to find IIS bindings.
+
+Red tip #196: DA -> Locate DB -> Found MSSQL? https://github.com/NetSPI/PowerUpSQL use PowerUpSQL to enumerate and privesc by stealing tokens.
+
+Red tip #197: If ACL doesn’t let you read other users’ home shares, you can try net view \\fileserv /all to try other shares and folders!
+
+Red tip #198: Username jondoe and jondoe-x? Ones an Admin? Try same password. May be shared 😎 repeat for entire user list.
+
+Red tip #199: Failed to phish? Payloads failing? Mac users? Write an email and ask them to open terminal and paste in python Empyre one line
+
+Red tip #200: @_wald0 blessed us with this BH cypher query to skip specific nodes to look for other paths. https://pastebin.com/qAzH9uji
+
+Red tip #201: @424f424f pushed some research into LNK files inside CAB can be used to bypass the Attachment Manager 👍http://www.rvrsh3ll.net/blog/informational/bypassing-windows-attachment-manager/
+
+Red tip #202: When domain fronting, your calls hit the edge node, so every domain you use potentially hits a different a IP! 😎
+
+Red tip #203: If using @Cneelis StarFighter. Instead of using a staged web delivery, just stick while stageless payload as encoded block in!
+
+Red tip #204: Printers are often good MAC addresses to use to beat NAC when physical red teaming as printers (mostly?) don’t support 802.1x
+
+Red tip #205: If proxy is blocking SCT file, replace <scriptlet> with <package> and add <component id="test"> around the rest. Thx @subTee
+
+Red tip #206: CobaltStrike's @armitagehacker VNC not working? Here's a workaround using @artkond Invoke-VNC https://github.com/vysec/Aggressor-VYSEC/blob/master/vnc-psh.cna
+
+Red tip #207: Got C2 on Windows user but no credentials? Leak a hash using @leftp's code. Implemented into CNA https://github.com/vysec/Aggressor-VYSEC/blob/master/Invoke-CredLeak.ps1
+
+Red tip #208: @Nebulator spoke on IP regex by IR at #SnoopCon. Here's CobaltStrike @armitagehacker CNA to automate https://github.com/vysec/Aggressor-VYSEC/blob/master/ping.cna
+
+Red tip #209: Automate environment prepping and spawn all processes as a child of explorer.exe by @armitagehacker https://github.com/vysec/Aggressor-VYSEC/blob/master/auto-prepenv.cna
+
+Red tip #210: @subTee highlighted to us that XML requests can be used as a download cradle in constrained language mode!
