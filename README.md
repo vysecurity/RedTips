@@ -45,7 +45,7 @@ Red tip #20: So apparently not many people use SSH for redirector setup. So try 
 
 Red tip #21: Found open user home shares that are accessible? See if you can drop into Startup Programs for lateral movement and privesc.
 
-Red tip 22: Use VNC, microphone and webcam to perform surveillance. Netstat, tasklist can provide context into what the users doing.
+Red tip #22: Use VNC, microphone and webcam to perform surveillance. Netstat, tasklist can provide context into what the users doing.
 
 Red tip #23: Stash payloads in C:\$Recycle.Bin
 
