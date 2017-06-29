@@ -428,3 +428,33 @@ Red tip #208: @Nebulator spoke on IP regex by IR at #SnoopCon. Here's CobaltStri
 Red tip #209: Automate environment prepping and spawn all processes as a child of explorer.exe by @armitagehacker https://github.com/vysec/Aggressor-VYSEC/blob/master/auto-prepenv.cna
 
 Red tip #210: @subTee highlighted to us that XML requests can be used as a download cradle in constrained language mode!
+
+Red tip #211: Check out @armitagehacker's post on OPSEC considerations when using Cobalt Strike's beacon. https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/
+
+Red tip #212: Reset AD passwords from Linux with @mubix https://room362.com/post/2017/reset-ad-user-password-with-linux/ :) proxychains it over your pivot :D
+
+Red tip #213: Got a NetNTLMv1 hash? Convert it to NTLM by cracking three DES keys: https://hashcat.net/forum/thread-5912.html
+
+Red tip #214: If you don’t 100 percent understand NETNTLMv1 and v2 read up on https://blog.smallsec.ca/2016/11/21/ntlm-challenge-response/
+
+Red tip #215: If you don’t know how LM and NTLM hashing works... go back to basics with https://blog.smallsec.ca/2016/11/07/windows-credentials/
+
+Red tip #216: @424f424f just made me aware that FireEye can prevent runas from executing. Use unmanaged PS to spawn https://github.com/rvrsh3ll/Misc-Powershell-Scripts/blob/master/RunAs.ps1
+
+Red tip #217: S4U can be used to delegate across SPN. So if you have msds-allowedtodelagateto HTTP you can exploit to obtain HOST and CIFS
+
+Red tip #218: You’re in a subnet where people RDP into but you can’t attack outwards? Set backdoor over tsclient on start keys. 😎
+
+Red tip #219: Unsure what the localised admin account might be called or need to copy and paste? Check out https://social.technet.microsoft.com/wiki/contents/articles/13813.localized-names-for-administrator-account-in-windows.aspx
+
+Red tip #220: EDR monitoring “whoami”? Use echo %userprofile%; echo %username%. Or replace echo with anything that reflects error: ie. set
+
+Red tip #221: Network segregation in play? Try Get-NetSubnet, Get-NetSite in PowerView or browse in AD explorer. Can help find your way :)
+
+Red tip #222: If you want to simulate MBR activity like #Petya, check out https://github.com/PowerShellMafia/PowerSploit/blob/master/Mayhem/Mayhem.psm1
+
+Red tip #223: Secure your beach heads against #Petya WMIC /node:host process call create “echo > C:\windows\perfc”
+
+Red tip #224: Using Linux? Modify /etc/dhcp/dhclient.conf and remove gethostname() for Opsec when you VPN or have to rock up on site.
+
+Red tip #225: Stuck in a situation heavily segregated situation on a server? Try RDPInception attack vector out https://www.mdsec.co.uk/2017/06/rdpinception/
