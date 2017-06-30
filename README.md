@@ -458,3 +458,5 @@ Red tip #223: Secure your beach heads against #Petya WMIC /node:host process cal
 Red tip #224: Using Linux? Modify /etc/dhcp/dhclient.conf and remove gethostname() for Opsec when you VPN or have to rock up on site.
 
 Red tip #225: Stuck in a heavily segregated situation on a server? Try RDPInception attack vector out https://www.mdsec.co.uk/2017/06/rdpinception/
+
+Red tip #226: Reduce AV detection by using fake Microsoft certificate.
