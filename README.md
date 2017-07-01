@@ -460,3 +460,5 @@ Red tip #224: Using Linux? Modify /etc/dhcp/dhclient.conf and remove gethostname
 Red tip #225: Stuck in a heavily segregated situation on a server? Try RDPInception attack vector out https://www.mdsec.co.uk/2017/06/rdpinception/
 
 Red tip #226: Reduce AV detection by using fake Microsoft certificate.
+
+Red tip #227: Not using notifications yet for C2 events? For @armitagehacker's Cobalt Strike check out
