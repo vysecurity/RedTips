@@ -1,3 +1,7 @@
+Note
+====
+No longer being updated, please refer to https://vincentyiu.co.uk for red team tips :)
+
 Credits
 =======
 
